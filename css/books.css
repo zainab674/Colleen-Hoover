@@ -1,0 +1,338 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ---------------------------------------------------------- Main css -------------------------------------------------------------*/
+nav a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+nav ul {
+    background-color: #6d7741;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li:hover {
+    background-color: white;
+    color: black;
+
+}
+
+@media screen and (max-width:599px) {
+
+    nav a {
+        font-size: 15px;
+    }
+
+    nav ul li {
+
+        padding: 15px;
+
+    }
+}
+
+@media screen and (max-width:411px) {
+
+    nav a {
+        font-size: 11px;
+    }
+
+    nav ul li {
+
+        padding: 15px;
+        padding-right: 4px;
+
+    }
+}
+
+
+/* ------------------------------------------------- for mobiles -------------------------------------------------------------------- */
+@media(max-width: 900px) {
+
+   
+    main {
+        margin-top: 1em;
+        font-family: 'Noto Sans JP', sans-serif;
+      
+    }
+
+    .books {
+        display: flex;
+        flex-direction: row;
+        background-color: #9f9a57;
+        border-radius: 10px;
+        margin-bottom: 3em;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    }
+
+   
+
+    .book-img {
+        width: 100%;
+        height: 80%;
+        max-width: 1000px;
+        margin: 1.5em;
+        border-radius: 3px;
+        transition: transform 1s;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .book-img:hover {
+        transform: scale(1.05);
+    }
+
+    .descp {
+        margin: 1.5em;
+        padding: 1em;
+
+    }
+
+    .book-name {
+        font-weight: bold;
+        padding-bottom: 0.5em;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .author {
+        padding-bottom: 0.5em;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .rating {
+        padding-bottom: 1.2em;
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .info {
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .descp button {
+        margin-top: 1em;
+        background: none;
+        border: none;
+        color: #493820;
+        background-color: white;
+        padding: 0.6em 1.5em;
+        font-size: 1em;
+        border-radius: 20px;
+        font-weight: bolder;
+    }
+
+    .descp button:hover {
+        color: #ffffff;
+        background-color: #a16e6e;
+    }
+
+   
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------- fOR PC AND LAPTOPS -------------------------------------------- */
+@media(min-width: 900px) {
+
+
+   
+    main {
+        margin-top: 1em;
+        font-family: 'Noto Sans JP', sans-serif;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .books {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        max-width: 600px;
+        justify-content: space-evenly;
+        background-color: #9f9a57;
+        border-radius: 10px;
+        margin-bottom: 3em;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    }
+
+   
+    .book-img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 3px;
+        transition: transform 1s;
+        margin: 1.5em;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
+    .book-img:hover {
+        transform: scale(1.05);
+    }
+
+    .descp {
+        margin: 1.5em;
+        padding: 1em;
+
+    }
+
+    .book-name {
+        font-weight: bold;
+        padding-bottom: 0.5em;
+        font-size: 2em;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .author {
+        padding-bottom: 0.5em;
+        font-size: 1.7em;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .rating {
+        padding-bottom: 1.2em;
+        font-size: 1.4em;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .info {
+        font-size: 1em;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    .descp button {
+        margin-top: 1em;
+        background: none;
+        border: none;
+        color: #493820;
+        background-color: white;
+        padding: 0.6em 1.5em;
+        font-size: 1em;
+        border-radius: 20px;
+        font-weight: bolder;
+    }
+
+    .descp button:hover {
+        color: #ffffff;
+        background-color: #a16e6e;
+    }
+
+  
+}
+
+    .button {
+        display: inline-block;
+        padding: 0.5em 1.0em;
+        border-radius: 4px;
+        background: #ffffff;
+        font-family: sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid #000000;
+        margin: 10px;
+        -webkit-transition: background 0.3s;
+        -moz-transition: background 0.3s;
+        transition: background 0.3s;
+    }
+
+    .button:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .button:active {
+        background-color: rgba(0, 0, 0, 0.1);
+        outline: none;
+    }
+
+    .button-group {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .button-group:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+
+
+
+
